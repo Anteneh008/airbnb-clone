@@ -8,6 +8,8 @@ import MediumCard from "@/components/MediumCard";
 import LargeCard from "@/components/LargeCard";
 import Footer from "@/components/Footer";
 
+
+
 export default async function Home() {
   // Fetch data using the helper function
   const exploreData = await fetchExploreData();
@@ -16,7 +18,7 @@ export default async function Home() {
   return (
     <div>
       {/* Header */}
-      <Header />
+      <Header  placeholder="Start your search"/>
       {/* Banner */}
       <Banner />
 

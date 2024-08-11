@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ProgressBarClient from "@/components/ProgressBarClient";
 
 export const metadata: Metadata = {
   title: "Airbnb-clone",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ProgressBarClient />
+        {children}
+      </body>
     </html>
   );
 }
